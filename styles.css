@@ -475,14 +475,52 @@ h2 {
     background: var(--card-bg);
     padding: 2rem;
     border-radius: 10px;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.contact-link, .contact-text {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: var(--transition);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.contact-link {
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.contact-link:hover {
+    color: var(--primary-color);
+    background: rgba(255, 215, 0, 0.2);
+    transform: translateY(-2px);
 }
 
 .contact-item i {
-    font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.contact-link span, .contact-text span {
+    font-size: 1rem;
+    line-height: 1.4;
 }
 
 /* Background Image Section */

@@ -145,6 +145,7 @@ nav a.active::after {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 2rem;
     background: var(--dark-bg);
     position: relative;
@@ -156,6 +157,9 @@ nav a.active::after {
     position: relative;
     z-index: 2;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .greeting {
@@ -177,6 +181,7 @@ nav a.active::after {
 
 .changing-text {
     margin: 1.5rem 0 2rem 0;
+    align-self: flex-start;
 }
 
 .text {
@@ -213,16 +218,23 @@ nav a.active::after {
 
 /* Buttons */
 .cta-buttons {
-    text-align: left;
+    display: flex;
+    gap: 1rem;
     margin-top: 2rem;
+    align-self: flex-start;
+    padding-left: 0;
 }
 
 .btn {
     display: inline-block;
     padding: 0.8rem 2rem;
-    margin: 0.5rem 1rem 0.5rem 0;
+    text-decoration: none;
     font-weight: 600;
     letter-spacing: 0.5px;
+    color: var(--dark-bg);
+    background: var(--primary-color);
+    border-radius: 5px;
+    transition: var(--transition);
 }
 
 .btn.outline {
@@ -545,12 +557,14 @@ footer {
 
     .hero {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         padding: 100px 1rem;
     }
 
     .hero-content {
         margin-bottom: 3rem;
+        align-items: flex-start;
+        text-align: left;
     }
 
     .hero h1 {
@@ -562,10 +576,14 @@ footer {
         height: 300px;
     }
 
+    .cta-buttons {
+        flex-direction: row;
+        width: auto;
+    }
+
     .btn {
-        display: block;
-        margin: 1rem auto;
-        width: 200px;
+        width: auto;
+        margin: 0;
     }
 
     .project-image {

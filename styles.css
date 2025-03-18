@@ -162,12 +162,16 @@ nav a.active::after {
     align-items: flex-start;
 }
 
-.greeting {
-    color: var(--primary-color);
-    font-size: 1.5rem;
+.name-line {
+    white-space: nowrap;
     margin-bottom: 1rem;
-    font-weight: bold;
-    padding-left: 0;
+}
+
+.name-line h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: var(--text-color);
+    display: inline-block;
 }
 
 .hero h1 {
@@ -180,6 +184,7 @@ nav a.active::after {
 
 .highlight {
     color: var(--primary-color);
+    white-space: nowrap;
 }
 
 .changing-text {
@@ -573,7 +578,7 @@ footer {
         text-align: left;
     }
 
-    .hero h1 {
+    .name-line h1 {
         font-size: 2.5rem;
         line-height: 1.3;
     }
